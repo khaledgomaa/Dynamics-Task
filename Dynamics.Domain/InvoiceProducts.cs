@@ -18,5 +18,7 @@ namespace Dynamics.Domain
         public int Qty { get; set; }
 
         public float Price { get; set; }
+
+        public decimal? Discount { get; set; }
     }
 }

@@ -9,5 +9,11 @@ namespace Dynamics.Domain
     {
         [Required]
         public string Name { get; set; }
+
+        [Required]
+        public string Location { get; set; }
+
+        [Required]
+        public int ContactNumber { get; set; }
     }
 }

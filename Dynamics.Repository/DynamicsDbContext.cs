@@ -20,7 +20,6 @@ namespace Dynamics.Repository
 
         public DbSet<Store> Stores { get; set; }
 
-        public DbSet<Discount> Discounts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

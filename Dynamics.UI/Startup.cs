@@ -35,6 +35,7 @@ namespace Dynamics.UI
             services.AddScoped(typeof(IRepository<>),typeof(GenericRepository<>));
             services.AddScoped<IInvoiceRepository, InvoiceRepository>();
             services.AddScoped<IInvoiceProductRepository, InvoiceProductRepository>();
+            services.AddTransient<IUnitOfWork, GenericUnitOfWork>();
 
             services.AddTransient<IInvoiceManager, InvoiceManager>();
         }

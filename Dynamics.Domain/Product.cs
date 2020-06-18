@@ -17,8 +17,6 @@ namespace Dynamics.Domain
         [Required]
         public int Amount { get; set; }
 
-        [ForeignKey("Discount")]
-        public int? DiscountId { get; set; }
-        public Discount Discount { get; set; }
+        public bool DiscountFlag { get; set; }
     }
 }
