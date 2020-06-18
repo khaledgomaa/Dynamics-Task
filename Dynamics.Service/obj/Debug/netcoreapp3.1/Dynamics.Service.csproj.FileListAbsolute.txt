@@ -7,3 +7,17 @@ C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\ne
 C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.csproj.CoreCompileInputs.cache
 C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.dll
 C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.pdb
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Service.deps.json
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Service.dll
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Service.pdb
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.csprojAssemblyReference.cache
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.AssemblyInfoInputs.cache
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.AssemblyInfo.cs
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.csproj.CoreCompileInputs.cache
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.dll
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.pdb
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Domain.dll
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Repository.dll
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Repository.pdb
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Domain.pdb
+E:\Courses\Github\Dynamics-Task\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.csproj.CopyComplete

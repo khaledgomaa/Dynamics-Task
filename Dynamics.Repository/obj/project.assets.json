@@ -5021,11 +5021,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Repository\\Dynamics.Repository.csproj",
+      "projectUniqueName": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Repository\\Dynamics.Repository.csproj",
       "projectName": "Dynamics.Repository",
-      "projectPath": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Repository\\Dynamics.Repository.csproj",
+      "projectPath": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Repository\\Dynamics.Repository.csproj",
       "packagesPath": "C:\\Users\\KhaledGomaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Repository\\obj\\",
+      "outputPath": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KhaledGomaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5041,8 +5041,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\Dynamics.Domain.csproj": {
-              "projectPath": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\Dynamics.Domain.csproj"
+            "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\Dynamics.Domain.csproj": {
+              "projectPath": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\Dynamics.Domain.csproj"
             }
           }
         }

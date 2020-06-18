@@ -1220,6 +1220,9 @@
         }
       },
       "Dynamics.Service/1.0.0": {
+        "dependencies": {
+          "Dynamics.Repository": "1.0.0"
+        },
         "runtime": {
           "Dynamics.Service.dll": {}
         },

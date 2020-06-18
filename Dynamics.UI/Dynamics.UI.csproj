@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Dynamics.Service\Dynamics.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Products\" />
+  </ItemGroup>
+
 </Project>

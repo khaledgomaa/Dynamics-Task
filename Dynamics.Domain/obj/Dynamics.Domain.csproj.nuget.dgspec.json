@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\Dynamics.Domain.csproj": {}
+    "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\Dynamics.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\Dynamics.Domain.csproj": {
+    "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\Dynamics.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\Dynamics.Domain.csproj",
+        "projectUniqueName": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\Dynamics.Domain.csproj",
         "projectName": "Dynamics.Domain",
-        "projectPath": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\Dynamics.Domain.csproj",
+        "projectPath": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\Dynamics.Domain.csproj",
         "packagesPath": "C:\\Users\\KhaledGomaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KhaledGomaa\\source\\repos\\DynamicsLinkTask\\Dynamics.Domain\\obj\\",
+        "outputPath": "E:\\Courses\\Github\\Dynamics-Task\\Dynamics.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KhaledGomaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
