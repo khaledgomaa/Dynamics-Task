@@ -15,8 +15,6 @@ namespace Dynamics.Domain
         public int StoreId { get; set; }
         public Store Store { get; set; }
 
-        public float Total { get; set; }
-
         public float Taxes { get; set; }
 
         public float Net { get; set; }
