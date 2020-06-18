@@ -1,0 +1,15 @@
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Repository.deps.json
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Repository.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.csprojAssemblyReference.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.AssemblyInfoInputs.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.AssemblyInfo.cs
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Repository.runtimeconfig.json
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Repository.runtimeconfig.dev.json
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Repository.pdb
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Domain.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\bin\Debug\netcoreapp3.1\Dynamics.Domain.pdb
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.csproj.CoreCompileInputs.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.csproj.CopyComplete
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.pdb
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Repository\obj\Debug\netcoreapp3.1\Dynamics.Repository.genruntimeconfig.cache

@@ -1,0 +1,9 @@
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Service.deps.json
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Service.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\bin\Debug\netcoreapp3.1\Dynamics.Service.pdb
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.csprojAssemblyReference.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.AssemblyInfoInputs.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.AssemblyInfo.cs
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.csproj.CoreCompileInputs.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Service\obj\Debug\netcoreapp3.1\Dynamics.Service.pdb

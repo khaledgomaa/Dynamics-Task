@@ -1,0 +1,9 @@
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\bin\Debug\netcoreapp3.1\Dynamics.Domain.deps.json
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\bin\Debug\netcoreapp3.1\Dynamics.Domain.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\bin\Debug\netcoreapp3.1\Dynamics.Domain.pdb
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\obj\Debug\netcoreapp3.1\Dynamics.Domain.csprojAssemblyReference.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\obj\Debug\netcoreapp3.1\Dynamics.Domain.AssemblyInfoInputs.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\obj\Debug\netcoreapp3.1\Dynamics.Domain.AssemblyInfo.cs
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\obj\Debug\netcoreapp3.1\Dynamics.Domain.csproj.CoreCompileInputs.cache
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\obj\Debug\netcoreapp3.1\Dynamics.Domain.dll
+C:\Users\KhaledGomaa\source\repos\DynamicsLinkTask\Dynamics.Domain\obj\Debug\netcoreapp3.1\Dynamics.Domain.pdb
