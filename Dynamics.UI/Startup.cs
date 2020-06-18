@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Dynamics.Repository;
+using Dynamics.Repository.Implementations;
+using Dynamics.Repository.Interfaces;
+using Dynamics.Service.Implementations;
+using Dynamics.Service.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +32,11 @@ namespace Dynamics.UI
             services.AddControllersWithViews();
             services.AddDbContextPool<DynamicsDbContext>
                 (options => options.UseSqlServer(Configuration.GetConnectionString("DynamicsConnections")));
+            services.AddScoped(typeof(IRepository<>),typeof(GenericRepository<>));
+            services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+            services.AddScoped<IInvoiceProductRepository, InvoiceProductRepository>();
+
+            services.AddTransient<IInvoiceManager, InvoiceManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
