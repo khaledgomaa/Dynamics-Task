@@ -4,6 +4,7 @@ using Dynamics.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Dynamics.Service.Implementations
@@ -28,9 +29,9 @@ namespace Dynamics.Service.Implementations
             return iUnitOfWork.InvoiceRepository.GetAll().ToList();
         }
 
-        public IEnumerable<Invoice> GetById()
+        public Invoice GetById(int id)
         {
-            throw new NotImplementedException();
+            return iUnitOfWork.InvoiceRepository.GetById(id);
         }
 
         public void Remove(Invoice entity)
@@ -54,6 +55,14 @@ namespace Dynamics.Service.Implementations
             throw new NotImplementedException();
         }
 
+        public IEnumerable<InvoiceProducts> GetInvoiceProducts(int id)
+        {
+            return iUnitOfWork.InvoiceProductRepository.GetAll().Where(i=>i.InvoiceId == id);
+        }
 
+        public IEnumerable<Invoice> GetAllInclude(Expression<Func<Invoice, object>> includes)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

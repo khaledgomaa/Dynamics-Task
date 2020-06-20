@@ -1,8 +1,10 @@
-﻿using Dynamics.Repository.Interfaces;
+﻿using Dynamics.Domain;
+using Dynamics.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Dynamics.Repository.Implementations
@@ -30,14 +32,20 @@ namespace Dynamics.Repository.Implementations
             return dbContext.Set<TEntity>();
         }
 
-        public IEnumerable<TEntity> GetById()
+        public IEnumerable<TEntity> GetAllInclude(Expression<Func<TEntity, object>> includes)
         {
-            throw new NotImplementedException();
+            return dbContext.Set<TEntity>().Include(includes).ToList();
+        }
+
+        public TEntity GetById(int id)
+        {
+            return dbContext.Set<TEntity>().Find(id);
         }
 
         public void Remove(TEntity entity)
         {
             dbContext.Entry(entity).State = EntityState.Deleted;
         }
+
     }
 }

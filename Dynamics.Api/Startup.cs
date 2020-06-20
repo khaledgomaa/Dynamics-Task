@@ -40,7 +40,7 @@ namespace Dynamics.Api
             services.AddScoped<IInvoiceManager, InvoiceManager>();
             services.AddScoped<IProductManager, ProductManager>();
             services.AddScoped<IStoreManager, StoreManager>();
-
+            services.AddScoped<IInvoiceProducts, InvoiceProductManager>();
 
         }
 

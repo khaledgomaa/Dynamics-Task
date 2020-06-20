@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Dynamics.Domain;
 using Dynamics.Domain.ViewModel;
 using Dynamics.Repository;
+using Dynamics.Service.Implementations;
 using Dynamics.Service.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,11 +18,27 @@ namespace Dynamics.Api.Controllers
     {
         private IInvoiceManager invoiceManager;
         private IProductManager productManager;
+        private IInvoiceProducts invoiceProductManager;
 
-        public InvoicesController(IInvoiceManager invoiceManager , IProductManager productManager)
+        public InvoicesController(IInvoiceManager invoiceManager
+                                  , IProductManager productManager
+                                  , IInvoiceProducts invoiceProductManager)
         {
             this.invoiceManager = invoiceManager;
             this.productManager = productManager;
+            this.invoiceProductManager = invoiceProductManager;
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetInvoice(int id)
+        {
+            InvoiceOrder getInvoiceById = new InvoiceOrder
+            {
+                Invoice = invoiceManager.GetById(id),
+                InvoiceProducts = invoiceProductManager.GetAllInclude(p => p.Product).Where(i => i.InvoiceId == id).ToList()
+            };
+
+            return Ok(getInvoiceById);
         }
 
         [HttpPost]
@@ -37,16 +54,16 @@ namespace Dynamics.Api.Controllers
 
             invoiceOrder.Invoice.Date = DateTime.UtcNow;
 
-            UpdateProductsAmount(invoiceOrder.InvoiceProducts);
+            UpdateProducts(invoiceOrder.InvoiceProducts);
 
             invoiceManager.AddInvoice(invoiceOrder.Invoice, invoiceOrder.InvoiceProducts);
 
             invoiceManager.Complete();
 
-            return Ok();
+            return Ok(invoiceOrder.Invoice);
         }
 
-        private void UpdateProductsAmount(IEnumerable<InvoiceProducts> invoiceProducts)
+        private void UpdateProducts(IEnumerable<InvoiceProducts> invoiceProducts)
         {
             IEnumerable<Product> productsInDb = productManager.GetAll();
 
@@ -58,8 +75,10 @@ namespace Dynamics.Api.Controllers
                 {
                     productsInDb.Where(p => p.Id == invoiceproduct.ProductId)
                             .FirstOrDefault().Amount -= invoiceproduct.Qty;
+
+                    invoiceproduct.Price = productsInDb.Where(p => p.Id == invoiceproduct.ProductId)
+                            .FirstOrDefault().Price;
                 }
-                
             }
         }
     }

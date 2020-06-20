@@ -1,9 +1,11 @@
 ﻿using Dynamics.Domain;
 using Dynamics.Repository;
+using Dynamics.Repository.Interfaces;
 using Dynamics.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Dynamics.Service.Implementations
@@ -36,7 +38,12 @@ namespace Dynamics.Service.Implementations
             return unitOfWork.ProductsRepository.GetAll().Where(p=>p.Amount > 0).ToList();
         }
 
-        public IEnumerable<Product> GetById()
+        public IEnumerable<Product> GetAllInclude(Expression<Func<Product, object>> includes)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Product GetById(int id)
         {
             throw new NotImplementedException();
         }
@@ -45,5 +52,6 @@ namespace Dynamics.Service.Implementations
         {
             throw new NotImplementedException();
         }
+
     }
 }

@@ -1,9 +1,11 @@
 ﻿using Dynamics.Domain;
 using Dynamics.Repository;
+using Dynamics.Repository.Interfaces;
 using Dynamics.Service.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Dynamics.Service.Implementations
@@ -36,12 +38,22 @@ namespace Dynamics.Service.Implementations
             return unitOfWork.StoresRepository.GetAll().ToList();
         }
 
-        public IEnumerable<Store> GetById()
+        public IEnumerable<Store> GetAllInclude(Expression<Func<Store, object>> includes)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Store> GetById(int id)
         {
             throw new NotImplementedException();
         }
 
         public void Remove(Store entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        Store IRepository<Store>.GetById(int id)
         {
             throw new NotImplementedException();
         }

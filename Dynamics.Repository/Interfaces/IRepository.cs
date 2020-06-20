@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Dynamics.Repository.Interfaces
@@ -11,8 +12,11 @@ namespace Dynamics.Repository.Interfaces
 
         IEnumerable<TEntity> GetAll();
 
-        IEnumerable<TEntity> GetById();
+        TEntity GetById(int id);
 
         void Remove(TEntity entity);
+
+        IEnumerable<TEntity> GetAllInclude(Expression<Func<TEntity, object>> includes);
+
     }
 }
