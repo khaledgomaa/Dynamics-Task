@@ -3,6 +3,7 @@ using Dynamics.Repository;
 using Dynamics.Service.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Dynamics.Service.Implementations
@@ -17,20 +18,14 @@ namespace Dynamics.Service.Implementations
             this.iUnitOfWork = iUnitOfWork;
         }
 
-        public void AddInvoice(Invoice invoice, IEnumerable<InvoiceProducts> invoiceProducts)
-        {
-            //add invoice and products;
-            iUnitOfWork.InvoiceRepository.Add(invoice);
-            iUnitOfWork.InvoiceProductRepository.AddRange(invoiceProducts);
-        }
         public void Add(Invoice entity)
         {
-            throw new NotImplementedException();
+            iUnitOfWork.InvoiceRepository.Add(entity);           
         }
 
         public IEnumerable<Invoice> GetAll()
         {
-            throw new NotImplementedException();
+            return iUnitOfWork.InvoiceRepository.GetAll().ToList();
         }
 
         public IEnumerable<Invoice> GetById()
@@ -42,5 +37,23 @@ namespace Dynamics.Service.Implementations
         {
             throw new NotImplementedException();
         }
+
+        public void Complete()
+        {
+            iUnitOfWork.Complete();
+        }
+
+        public void AddInvoice(Invoice invoice, IEnumerable<InvoiceProducts> invoiceProducts)
+        {
+            iUnitOfWork.InvoiceRepository.Add(invoice);
+            iUnitOfWork.InvoiceProductRepository.AddRange(invoiceProducts);
+        }
+
+        public void AddRange(IEnumerable<Invoice> entity)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

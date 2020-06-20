@@ -1,4 +1,5 @@
-﻿using Dynamics.Repository.Implementations;
+﻿using Dynamics.Domain;
+using Dynamics.Repository.Implementations;
 using Dynamics.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -6,11 +7,14 @@ using System.Text;
 
 namespace Dynamics.Repository
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork 
     {
-        InvoiceRepository InvoiceRepository { get; }
+        GenericRepository<Product> ProductsRepository { get; }
 
-        IInvoiceProductRepository InvoiceProductRepository { get; }
+        GenericRepository<Store> StoresRepository { get; }
+        GenericRepository<Invoice> InvoiceRepository { get; }
+
+        GenericRepository<InvoiceProducts> InvoiceProductRepository { get; }
         void Complete();
     }
 }

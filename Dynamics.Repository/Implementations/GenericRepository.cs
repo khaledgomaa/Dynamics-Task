@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Dynamics.Repository.Implementations
@@ -16,12 +17,17 @@ namespace Dynamics.Repository.Implementations
         }
         public void Add(TEntity entity)
         {
-            dbContext.Add(entity);
+            dbContext.Set<TEntity>().Add(entity);
+        }
+
+        public void AddRange(IEnumerable<TEntity> entity)
+        {
+            dbContext.Set<TEntity>().AddRange(entity);
         }
 
         public IEnumerable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return dbContext.Set<TEntity>();
         }
 
         public IEnumerable<TEntity> GetById()
